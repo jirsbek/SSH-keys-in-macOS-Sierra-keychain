@@ -36,5 +36,3 @@ Just add .plist with the following content to the path `~/Library/LaunchAgents/`
 
 <!-- @@@@LingonWhatStart:ssh-add -A@@@@LingonWhatEnd -->
 ```
-
-## Solution #2 (using Automator to create the command app)
