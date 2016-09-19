@@ -13,7 +13,7 @@ As described in detail on https://openradar.appspot.com/27348363, macOS/OS X til
 Unfortunately this way no longer works and command `ssh-add -K` in macOS Sierra no longer saves SSH keys in OS's keychain. As Apple Developer stated: _"That’s expected. We re-aligned our behavior with the mainstream OpenSSH in this area."_
 
 ## Solution
-There is possible solution – to call command `ssh-add -A` on every startup of macOS.
+There is a possible solution – to call command `ssh-add -A` on every startup of macOS.
 
 Just add .plist with the following content to the path `~/Library/LaunchAgents/` or create one with Lingon app (https://www.peterborgapps.com/lingon/):
 
