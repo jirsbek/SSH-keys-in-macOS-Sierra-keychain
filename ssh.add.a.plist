@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>ssh-add-a</string>
+	<string>ssh.add.a</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>ssh-add</string>
