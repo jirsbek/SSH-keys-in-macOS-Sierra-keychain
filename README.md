@@ -36,3 +36,6 @@ Just add .plist with the following content to the path `~/Library/LaunchAgents/`
 
 <!-- @@@@LingonWhatStart:ssh-add -A@@@@LingonWhatEnd -->
 ```
+
+## Notes
+If you have issues with `ssh-add: illegal option -- K` after using `ssh-add -K` command, you may use full path of command `/usr/bin/ssh-add`.
