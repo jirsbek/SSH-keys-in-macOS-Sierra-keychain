@@ -15,7 +15,11 @@ Unfortunately this way no longer works and command `ssh-add -K` in macOS Sierra 
 ## Solution
 There is a possible solution – after usage of `ssh-add -K <key>` (it's recommended to use absolute path of keys) call command `ssh-add -A` on every startup of macOS.
 
-Just add .plist with the following content to the path `~/Library/LaunchAgents/` or create one with Lingon app (https://www.peterborgapps.com/lingon/):
+Just download this file directly:
+```
+curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
+```
+or create it with Lingon app (https://www.peterborgapps.com/lingon/):
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
