@@ -15,7 +15,7 @@ Unfortunately this way no longer works and command `ssh-add -K` in macOS Sierra 
 ## Solution
 There is a possible solution – after usage of `ssh-add -K <key>` (it's recommended to use absolute path of keys) call command `ssh-add -A` on every startup of macOS.
 
-Just add .plist with the following content to the path `~/Library/LaunchAgents/` or create one with Lingon app (https://www.peterborgapps.com/lingon/):
+Just add .plist with the following content to the path `~/Library/LaunchAgents/`:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -36,6 +36,12 @@ Just add .plist with the following content to the path `~/Library/LaunchAgents/`
 
 <!-- @@@@LingonWhatStart:ssh-add -A@@@@LingonWhatEnd -->
 ```
+
+Or create the file with the Lingon app (https://www.peterborgapps.com/lingon/).
+
+Or use curl command to download the .plist file to the stated path:
+
+```curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist```
 
 ## Notes
 If you have issues with `ssh-add: illegal option -- K` after using `ssh-add -K` command, you may use full path of the command `/usr/bin/ssh-add`.
