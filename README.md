@@ -5,7 +5,6 @@
 - https://forums.developer.apple.com/thread/48794
 - http://testequals.com/2016/09/09/macos-sierra-10-12-ssh-keys/
 - https://www.reddit.com/r/osx/comments/52zn5r/difficulties_with_sshagent_in_macos_sierra/
-- https://forums.developer.apple.com/thread/48794
 
 ## Problem
 As described in detail on https://openradar.appspot.com/27348363, macOS/OS X till Yosemite used to remember SSH keys added by command `ssh-add -K <key>`.
