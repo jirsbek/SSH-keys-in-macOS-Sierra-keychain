@@ -28,7 +28,7 @@ Host * (asterisk for all hosts or add specific host)
 ```
 
 ### Solution 2
-There is a possible solution – after usage of `ssh-add -K <key>` (it's recommended to use absolute path of keys) call command `ssh-add -A` on every startup of macOS.
+After usage of `ssh-add -K <key>` (it's recommended to use absolute path of keys) call command `ssh-add -A` on every startup of macOS.
 
 Just add .plist with the following content to the path `~/Library/LaunchAgents/`:
 
