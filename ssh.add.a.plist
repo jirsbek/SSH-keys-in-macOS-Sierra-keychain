@@ -6,7 +6,7 @@
 	<string>ssh.add.a</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>ssh-add</string>
+		<string>/usr/bin/ssh-add</string>
 		<string>-A</string>
 	</array>
 	<key>RunAtLoad</key>
