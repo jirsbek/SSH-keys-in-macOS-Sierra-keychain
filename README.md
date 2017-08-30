@@ -18,7 +18,7 @@ Unfortunately this way no longer works and the command `ssh-add -K` in macOS Sie
 
 
 ### Solution 1 (recommended)
-Apple updated its [Technical Notes] (https://developer.apple.com/library/content/technotes/tn2449/_index.html#//apple_ref/doc/uid/DTS40017589) to indicate that since 10.12.2, macOS includes version 7.3p1 of OpenSSH and its new behaviors.
+Apple updated its [Technical Notes](https://developer.apple.com/library/content/technotes/tn2449/_index.html#//apple_ref/doc/uid/DTS40017589) to indicate that since 10.12.2, macOS includes version 7.3p1 of OpenSSH and its new behaviors.
 
 In `~/.ssh` create `config` file with the following content:
 
