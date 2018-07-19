@@ -10,7 +10,7 @@
 ## Problem
 As described in detail on https://openradar.appspot.com/27348363, macOS/OS X till Yosemite used to remember SSH keys added by command `ssh-add -K <key>`.
 
-Unfortunately this way no longer works and the command `ssh-add -K` in macOS Sierra no longer saves SSH keys in the keychain. As Apple Developer stated:
+Unfortunately this way no longer works. Keys added to the keychain via `ssh-add -K` are not automatically re-added to the ssh-agent after a reboot. As Apple Developer stated:
 
 > _"That’s expected. We re-aligned our behavior with the mainstream OpenSSH in this area."_
 
